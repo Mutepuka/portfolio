@@ -5,10 +5,12 @@ import {schemaTypes} from './schemaTypes'
 
 export default defineConfig({
   name: 'default',
-  title: 'My Sanity Project',
+  title: 'my_portfolio',
 
-  projectId: 'idb76agy',
+  projectId: 'e9praj72',
   dataset: 'production',
+
+  bathPath: '/structure',
 
   plugins: [structureTool(), visionTool()],
 
