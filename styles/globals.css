@@ -245,14 +245,14 @@
       font-size: 5rem;
     }
   }
-  /* @media screen and (max-width: 640px) {
-    .app__header-txt{
+  @media screen and (max-width: 640px) {
+    /* .app__header-txt{
       margin-left: 10px;
-    }
+    } */
     .badge-cmp, .tag-cmp {
       padding: 0.5rem 1rem;
     }
-  } */
+  }
   @media screen and (max-width: 1200px) {
     .app__header-badge {
       align-items: flex-start;
