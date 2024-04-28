@@ -245,7 +245,7 @@
       font-size: 5rem;
     }
   }
-  @media screen and (max-width: 540px) {
+  @media screen and (max-width: 640px) {
     .app__header-txt{
       margin-left: 10px;
     }
