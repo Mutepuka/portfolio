@@ -246,6 +246,9 @@
     }
   }
   @media screen and (max-width: 540px) {
+    .app__header-txt{
+      margin-left: 10px;
+    }
     .badge-cmp, .tag-cmp {
       padding: 0.5rem 1rem;
     }
@@ -569,7 +572,7 @@
   }
   @media screen and (min-width: 2000px) {
     .app__skills-item{
-      margin: 1rem2rem;
+      margin: 1rem 2rem;
     }
     .app__skills-item p{
       margin-top: 1rem;
@@ -639,6 +642,6 @@
   }
   @media screen and (min-width: 2000px) {
     .app__work-hover{
-      margin: 1rem2rem;
+      margin: 1rem 2rem;
     }
   }
