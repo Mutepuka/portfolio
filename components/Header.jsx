@@ -29,7 +29,7 @@ const Header = () => {
             <div className='app__header-badge'>
                 <div className='badge-cmp app__flex'>
                     <span>👋</span>
-                    <div className='app__header-txt mx-20'>
+                    <div className='app__header-txt'>
                         <p className='text-sm text-gray-500'>Hello, I am</p>
                         <h1 className='text-3xl font-semibold'>Musonda</h1>
                     </div>
