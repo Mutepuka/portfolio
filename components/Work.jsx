@@ -63,7 +63,7 @@ const Work = () => {
    className="flex flex-wrap items-center justify-center"
    >
     {filterWorks.map((work, index)=>(
-      <div key={index} className="flex item-center justify-center flex-col w-72 m-8 p-4 rounded-lg bg-white sm:bg-white cursor-pointer transition-all">
+      <div key={index} className="app__work-cont flex item-center justify-center rounded-lg bg-white sm:bg-white cursor-pointer transition-all">
         <div className="flex items-center justify-center w-full h-60 relative">
           <Image
           src={urlFor(work.imgUrl).url()}
@@ -83,7 +83,7 @@ const Work = () => {
                     whileInView={{ scale: [0, 1] }}
                     whileHover={{ scale: [1, 0.90] }}
                     transition={{ duration: 0.25 }}
-                    className="bg-black-500 flex items-center justify-center text-white bg-slade-950/[.5] m-2 font-extrabold cursor-pointer transition-all"
+                    className="flex items-center justify-center text-white"
                   >
                     <AiFillEye className="w-full h-full text-white"/>
 
