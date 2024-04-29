@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import AppWrap from "@wrapper/AppWrap";
+import MotionWrap from "@wrapper/MotionWrap";
 import { motion } from "framer-motion";
 import { client, urlFor } from '@libs/sanity';
 import Image from "next/image";
@@ -116,4 +117,8 @@ const Work = () => {
   )
 }
 
-export default AppWrap(Work, 'work') ;
+export default AppWrap(
+  MotionWrap(Work, 'app__works'),
+  'work',
+  'app__primarybg',
+);

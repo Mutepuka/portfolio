@@ -1,6 +1,7 @@
 "use client";
 
 import AppWrap from "@wrapper/AppWrap";
+import MotionWrap from "@wrapper/MotionWrap";
 import { useState, useEffect } from "react";
 import {Tooltip} from 'react-tooltip';
 import { motion } from 'framer-motion';
@@ -96,4 +97,8 @@ const Skills = () => {
   )
 }
 
-export default AppWrap(Skills, 'skills') 
+export default AppWrap(
+  MotionWrap(Skills, 'app__skills'),
+  'skills',
+  'app__primarybg',
+);

@@ -1,9 +1,10 @@
 "use client";
 import {useState, useEffect} from 'react';
 import { motion } from 'framer-motion';
-import Image from 'next/image';
+
 import { client, urlFor } from '@libs/sanity';
 import AppWrap from '@wrapper/AppWrap';
+import MotionWrap from '@wrapper/MotionWrap';
 
 const About = () => {
 
@@ -42,4 +43,9 @@ const About = () => {
   )
 }
 
-export default AppWrap(About, 'about') ;
+
+export default AppWrap(
+  MotionWrap(About, 'app__about'),
+  'about',
+  'app__primarybg',
+);

@@ -20,6 +20,20 @@
     background-position: center;
     background-repeat: repeat;
   }
+  .p-text{
+    font-size: 0.8rem;
+  text-align: left;
+  color: gray;
+  line-height: 1.5;
+
+  }
+  @media screen and (min-width: 2000px) {
+    .p-text{
+      font-size: 1.75rem;
+
+    }
+    
+  }
 
 /** nav bar css ***/
 .app__navbar{
@@ -524,6 +538,12 @@
       padding: 2rem;
     }
   }
+  /** skills section**/
+  .app__skills {
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+  }
   .app__skills-container{
     width: 80%;
     display: flex;
@@ -639,6 +659,11 @@
   }
 }
   /***app work css **/
+  .app__works {
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+  }
   .app__work-cont{
     flex-direction: column;
     width: 270px;
@@ -704,6 +729,170 @@
       margin: 1rem 2rem;
     }
   }
+  /***testimonials css**/
+  .app__testimonial {
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+  }
+  .app__testimonial-item{
+    width: 60%;
+    min-height: 320px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+
+    transition: all 0.3s ease-in-out;
+
+  }
+  .app__testimonial-item img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+
+  }
+  @media screen and (min-width: 2000px) {
+    .app__testimonial-item{
+      min-height: 450px;
+
+    }
+    .app__testimonial-item img {
+      width: 150px;
+      height: 150px;
+    }
+  }
+  @media screen and (max-width: 850px) {
+    .app__testimonial-item{
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .app__testimonial-item{
+      flex-direction: column;
+    }
+  }
+  .app__testimonial-content{
+    flex: 1;
+    height: 100%;
+    padding: 0 2rem;
+    text-align: left;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+
+  }
+  .app__testimonial-content p{
+    font-size: 1.25rem;
+    line-height: 2rem;
+    color: rgb(104, 103, 103);
+    font-family: "DM Sans", sans-serif;
+
+  }
+  @media screen and (min-width: 2000px) {
+    .app__testimonial-content p{
+      font-size: 2rem;
+      line-height: 3.5rem;
+
+    }
+    
+  }
+  @media screen and (max-width: 600px) {
+    .app__testimonial-content{
+      margin-top: 2rem;
+    padding: 0;
+
+    }
+    
+  }
+  .app__testimonial-btns{
+    flex-direction: row;
+  margin-top: 1rem;
+
+  }
+  .app__testimonial-btns div{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+
+    margin: 1rem;
+    transition: all 0.3s ease-in-out;
+
+  }
+  .app__testimonial-btns div svg{
+    width: 20px;
+      height: 20px;
+      color: #313bac;
+
+  }
+  .app__testimonial-btns div:hover{
+    background-color: orangered;
+
+  }
+  .app__testimonial-btns div:hover svg{
+    color: white;
+  }
+  @media screen and (min-width: 2000px) {
+    .app__testimonial-btns div{
+      width: 100px;
+      height: 100px;
+    }
+
+    .app__testimonial-btns div svg {
+      width: 45px;
+      height: 45px;
+    }
+  }
+  .app__testimonial-brands{
+    width: 80%;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+
+  }
+  .app__testimonial-brands div{
+    width: 150px;
+    margin: 1.5rem;
+
+  }
+  .app__testimonial-brands div img{
+    width: 100%;
+      height: auto;
+      object-fit: cover;
+      filter: grayscale(1);
+
+  }
+  .app__testimonial-brands div:hover img{
+    filter: grayscale(0);
+
+  }
+  @media screen and (min-width: 2000px) {
+    .app__testimonial-brands div{
+      width: 210px;
+    margin: 2rem;
+
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .app__testimonial-brands div{
+      width: 120px;
+    margin: 1rem;
+
+    }
+  }
+  @media screen and (max-width: 800px) {
+    .app__testimonial-brands{
+      width: 100%;
+
+    }
+    
+  }
+  
   /***footer css**/
   .head-text{
     font-size: 1.75rem;
