@@ -31,14 +31,14 @@ const Skills = () => {
   return (
     <>
       <h2 className="text-3xl text-gray-500 font-semibold">Skills & Experience</h2>
-      <div className="flex flex-row w-full mt-12 app__skills-container">
-        <motion.div className="flex flex-1 flex-wrap justify-start items-start mr-20 app__skills-list">
+      <div className="app__skills-container">
+        <motion.div className="app__skills-list">
           {skills.map((skill)=>(
             <motion.div
             whileInView={{opacity: [0,1]}}
             transition={{duration: 0.5}}
             key={skill.name}
-            className="flex items-center justify-center flex-col transition-all m-2 app__skills-item"
+            className="flex items-center justify-center app__skills-item"
             >
               <div className="flex items-center justify-center">
                 <Image
@@ -46,7 +46,7 @@ const Skills = () => {
                 width={200}
                 height={200}
                 alt={skill.name}
-                className="flex items-center justify-center"
+                className=""
                  />
 
               </div>
@@ -54,7 +54,7 @@ const Skills = () => {
             </motion.div>
           ))}
         </motion.div>
-        <div className="flex-1 flex-col items-start justify-start flex app__skills-exp">
+        <div className="app__skills-exp">
           {experiences.map((experience)=>(
             <motion.div
             className="app__skills-exp-item"

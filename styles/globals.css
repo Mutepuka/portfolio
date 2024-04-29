@@ -525,8 +525,18 @@
     }
   }
   .app__skills-container{
-    width: 100%;
+    width: 80%;
+    display: flex;
+    margin-top: 3rem;
+    flex-direction: row;
+  }
+  .app__skills-list{
     flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: 5rem;
   }
   /** skill page css*/
   @media screen and (max-width: 900px) {
@@ -546,6 +556,9 @@
   }
   .app__skills-item{
     text-align: center;
+    flex-direction: column;
+    margin: 1rem;
+    transition: all 0.3s ease-in-out;
   }
   .app__skills-item div{
     width: 90px;
@@ -582,6 +595,49 @@
     }
    
   }
+  /***app__skills-exp**/
+  .app__skills-exp{
+    flex: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  @media screen and (max-width: 900px) {
+    .app__skills-exp{
+      margin-top: 2rem;
+    }  
+  }
+.app__skills-exp-item{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 1rem 0;
+
+}
+.app__skills-exp-works{
+  flex: 1;
+}
+.app__skills-exp-work{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+  cursor: pointer;
+
+}
+.app__skills-exp-year{
+  margin-right: 3rem;
+
+}
+@media screen and (max-width: 450px) {
+  .app__skills-exp-year{
+    margin-right: 1rem;
+  }
+}
   /***app work css **/
   .app__work-cont{
     flex-direction: column;
