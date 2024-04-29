@@ -558,6 +558,28 @@
     align-items: flex-start;
     margin-right: 5rem;
   }
+  .skills-tooltip {
+    max-width: 300px !important;
+    background-color: white !important;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1) !important;
+    border-radius: 5px !important;
+    padding: 1rem !important;
+    color: gray !important;
+    text-align: center !important;
+    line-height: 1.5 !important;
+    opacity: 1 !important;
+  
+    
+  }
+  @media screen and (min-width: 2000px) {
+    .skills-tooltip{
+      font-size: 1.75rem !important;
+    max-width: 500px !important;
+    line-height: 2 !important;
+
+    }
+    
+  }
   /** skill page css*/
   @media screen and (max-width: 900px) {
     .app__skills-container{
