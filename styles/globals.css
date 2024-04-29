@@ -253,6 +253,10 @@
     .app__header-txt{
       margin-left: 2.5rem;
       margin-right: 2.5rem;
+      display: none;
+    }
+    .app__hand{
+      display: none;
     }
     .badge-cmp, .tag-cmp {
       padding: 0.5rem 1rem;
