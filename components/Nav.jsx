@@ -7,7 +7,7 @@ import { HiMenuAlt4, HiX} from "react-icons/hi";
 import {motion} from "framer-motion";
 const Nav = () => {
 
-    const [toggle, setToggle] = useState(false);
+    const [toggle, setToggle] = useState(true);
   return (
     <nav className="app__navbar">
       <div className="app__navbar-logo">
