@@ -14,7 +14,7 @@ const Nav = () => {
       <h3 className="text-lg font-semibold text-gray-500">Musonda Makena</h3>
       </div>
       <ul className="app__navbar-links">
-        {['home', 'about', 'work', 'skills', 'testimonials'].map((item) => (
+        {['home', 'about', 'work', 'skills', 'testimonials','contacts'].map((item) => (
           <li className="app__flex p-text" key={`link-${item}`}>
             <div />
             <a href={`#${item}`} className="flex-col font-semibold uppercase transition-all text-gray-500 hover:text-orange-500">{item}</a>
@@ -32,7 +32,7 @@ const Nav = () => {
           >
             <HiX onClick={() => setToggle(false)} />
             <ul>
-              {['home', 'about', 'work', 'skills', 'testimonials'].map((item) => (
+              {['home', 'about', 'work', 'skills', 'testimonials','contacts'].map((item) => (
                 <li key={item}>
                   <a href={`#${item}`} className="flex-col font-semibold uppercase transition-all text-gray-500 hover:text-orange-500" onClick={() => setToggle(false)}>
                     {item}
